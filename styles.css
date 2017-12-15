@@ -10150,11 +10150,11 @@ button.close {
 
 @font-face {
     font-family: "HELVETICALTLIGHT";
-    src: url("/public/assets/fonts/HELVETICALTLIGHT.eot"); /* IE9 */
-    src: url("/public/assets/fonts/HELVETICALTLIGHT.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
-    url("/public/assets/fonts/HELVETICALTLIGHT.woff") format("woff"), /* chromeã€firefox */
-    url("/public/assets/fonts/HELVETICALTLIGHT.ttf") format("truetype"), /* chromeã€firefoxã€operaã€Safari, Android, iOS 4.2+ */
-    url("/public/assets/fonts/HELVETICALTLIGHT.svg#HELVETICALTLIGHT") format("svg"); /* iOS 4.1- */
+    src: url("public/fonts/HELVETICALTLIGHT.eot"); /* IE9 */
+    src: url("public/fonts/HELVETICALTLIGHT.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("public/fonts/HELVETICALTLIGHT.woff") format("woff"), /* chromeã€firefox */
+    url("public/fonts/HELVETICALTLIGHT.ttf") format("truetype"), /* chromeã€firefoxã€operaã€Safari, Android, iOS 4.2+ */
+    url("public/fonts/HELVETICALTLIGHT.svg#HELVETICALTLIGHT") format("svg"); /* iOS 4.1- */
 }
 
 .qrcode { float:right; position:relative; width:70px; text-align:center;}
