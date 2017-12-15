@@ -1,9 +1,475 @@
+
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head lang="en">
+    <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta property="fb:app_id" content="359732077567313">
+        <meta property="og:title" content="misafes">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="http://www.misafes.com/mi-cam">
+        <meta property="og:image" content="http://www.misafes.com/public/assets/img/main/fblogo.jpg">
+        <meta property="og:site_name" content="misafes/"/>
+        <meta property="og:description" content="The best GPS Watch for you loved kids.">
+        <meta property="og:locale" content="zh_cn">
+        <meta property="og:locale:alternate" content="en_us">
+        <meta name="twitter:url" content="http://www.misafes.com/mi-cam">
+        <meta name="twitter:title" content="misafes">
+        <meta name="twitter:description" content="Wi-Fi remote video monitoring for everyone！">
+        <meta name="twitter:image" content="http://www.misafes.com/public/assets/img/main/fblogo.jpg">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:domain" content="misafes.com"/>
+        <title>Mi-Cam - Wi-Fi remote video monitoring for everyone！</title>
+        <meta name="description" content="Mi-Cam - Wi-Fi remote video monitoring for everyone！">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+
+    <link rel="shortcut icon" href="./public/favicon.ico?v=1">
+
+
+    <!--[if lt IE 9]>
+    <script src="./public/assets/js/html5-3.6-respond-1.4.2.min.js"></script>
+    <![endif]-->
+
+    <link media="all" type="text/css" rel="stylesheet" href="styles.css">
+
+    <link media="all" type="text/css" rel="stylesheet" href="./public/assets/css/micam_whather.css" />
+		<script src="//load.sumome.com/" data-sumo-site-id="146b8bae47c89ef98d8e92ecbac35c79b8bb5082b5bb597c6b2ca14646e7b830" async></script>
 <body>
-	Test
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <div class="b-preload">
+        <div class="b-preload__bg"></div>
+        <div class="b-preload__img">
+            <img src="./public/assets/img/main/min/preloader-logo.png" alt="" width="370" height="320">
+        </div>
+        <div class="b-preload__circle"></div>
+    </div>
+
+    <div class="b-dots hidden">
+        <ul>
+            <li class="active" id="dots_slide1"></li>
+            <li id="dots_slide2"></li>
+            <li id="dots_slide3"></li>
+            <li id="dots_slide4"></li>
+            <li id="dots_slide5"></li>
+            <li id="dots_slide6"></li>
+            <li id="dots_slide7"></li>
+            <li id="dots_slide8"></li>
+        </ul>
+    </div>
+
+    <header class="navbar navbar-fixed-top hidden" role="navigation">
+        <div class="navbar__container">
+            <div class="navbar__opacity"></div>
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/" id="menu_slide1">
+                        <picture>
+                            <source data-srcset="./public/assets/img/main/min/logo-menu_mobile.png" media="(max-width: 768px)">
+                            <source data-srcset="./public/assets/img/main/min/logo-menu.png">
+                            <img class="lazyload b-img__logo clearfix" alt="Misafes logo">
+                        </picture>
+                    </a>
+                </div>
+<!--               
+            <div class="qrcode">
+                <div class="qrcode-desk">
+                <a href="javascript:;" class="navbar-app">APP</a>
+                <div class="show-qrcode hidden">
+                <h4>Download Kid's Watcher app</h4>
+                <hr/>
+                <img src="/public/assets/img/main/min/gj_misafes_app_w361.png"><a href="https://itunes.apple.com/cn/app/kids-watcher/id978575349?mt=8" target="_blank"><img src="/public/assets/img/main/min/erweima2.jpg"></a><a href="https://play.google.com/store/apps/details?id=com.qiwo.xkidswatcher" target="_blank"><img src="/public/assets/img/main/min/erweima3.jpg"></a></div>
+                </div>
+                <div class="qrcode-mobile">
+                <a href="javascript:;" class="navbar-app">APP</a>
+                    <div class="show-qrcode hidden">
+                        <h4>Kid's Watcher</h4>
+                        <hr/>
+                        <a href="https://itunes.apple.com/cn/app/kids-watcher/id978575349?mt=8" class="ios" target="_blank"><img src="/public/assets/img/main/min/footer-ios-but.png"></a><a href="https://play.google.com/store/apps/details?id=com.qiwo.xkidswatcher" class="android" target="_blank"><img src="/public/assets/img/main/min/footer-android-but.png"></a>
+                    </div>
+                </div>
+            </div>
+-->            
+                <ul class="cd-header-buttons ">
+                    <li>
+                        <a class="cd-nav-trigger" href="#cd-primary-nav"><span></span></a>
+                    </li>
+                </ul> <!-- cd-header-buttons -->
+            </div>
+        </div>
+    </header>
+
+    <nav class="cd-nav">
+        <ul id="cd-primary-nav " class="cd-primary-nav is-fixed nav navbar-nav navbar-right">
+            <li class="xs-hidden">
+                <div class="menu__watch hidden" data-menu-watch="1">
+                    <img data-src="./public/assets/img/main/min/menu-watch.png" class="lazyload" alt="" width="95" height="60" />
+                </div>
+                <div class="menu__watch hidden" data-menu-watch="2">
+                    <img data-src="./public/assets/img/watch_plus/min/menu-wat-pl.png" class="lazyload" alt="" />
+                </div>
+                <div class="menu__watch hidden" data-menu-watch="3">
+                    <img data-src="./public/assets/img/kids_lace/min/menu-hover-lace.png" class="lazyload" alt="" />
+                </div>
+                <div class="menu__watch hidden" data-menu-watch="4">
+                    <img data-src="./public/assets/img/pets/menu-hover-pets.png" class="lazyload" alt="" />
+                </div>
+                <div class="menu__watch" data-menu-watch="5">
+                        <img data-src="./public/assets/img/micam/menu-hover-micam.png" class="lazyload" alt="">
+                                </div>
+            </li>
+            <li><a href="/Watcher" data-menu="1">Kid's Watcher</a></li>
+            <li><a href="/watch-plus" data-menu="2">Kid's Watcher Plus</a></li>
+            <li><a href="/smart-tracker" data-menu="3">Smart Tracker</a></li>
+		    <li><a href="/pets" data-menu="4">Pet's Watcher</a></li>
+		    <li><a href="/down"  data-menu="5">User Manual</a></li>
+        </ul> <!-- primary-nav -->
+    </nav> <!-- cd-nav -->
+
+    <main class="cd-main-content">
+        <section class="slide1">
+            <div class="slide1__content clearfix">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-offset-1 col-md-offset-4 col-lg-8 col-md-8 col-sm-offset-4 col-sm-9 col-xs-9">
+                        <div class="content__text">
+                            <h3>Mi-Cam<em>HD</em></h3>
+                            <h2>Wi-Fi remote video monitor for everyone</h2>
+                            <p class="">720P HD quality video, easy set up & use, two-way talk and supports free local video recording, all can be use by our user friendly Mi-Cam app.</p>
+                            <h4 style="font-weight:bold; font-size:40px"><br>Free App</h4>
+                            <div class="buy_bnt bnt2015">
+                               <a href="http://www.amazon.com/gp/product/B014FC5QXO" target="_blank" class="us"></a>
+                               <a href="http://www.amazon.co.uk/dp/B014FC5QXO" class="uk" target="_blank" ></a>
+                               <a href="http://www.amazon.de/dp/B014FC5QXO" class="de" target="_blank" ></a>
+                               <a href="http://www.amazon.es/dp/B014FC5QXO" class="es" target="_blank" ></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!--<hr/>-->
+
+        <section class="slide2">
+            <div class="slide2__content textcenter clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 titleRow">
+							<h3>One-Click Set Up & Use !</h3>
+	                        <p>Mi-Cam uses unique Wi-Fi & sound wave technology to automatically fulfill setup process.<br /> Or just simply follow step-by-step guide in the app</p>
+						</div>
+					</div>
+	
+	
+	
+					<div class="slide2_mobile_img" style="display: none">
+						<div class="row">
+							<div class="col-sm-12 col-xs-12">
+								<ul>
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="/public/assets/img/micam/2-sl-img1.jpg"><h4>Plug in the power cord</h4></li>
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="/public/assets/img/micam/2-sl-img2.jpg"><h4>Download Mi-Cam app</h4></li>
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="/public/assets/img/micam/2-sl-img3.jpg"><h4>Click to start sound wave<br />or Wi-Fi paring </h4></li>
+                                </ul>
+							</div>
+						</div>
+						</div>
+					<div class="container slide2_destop_img">
+						<div class="row slide2_destop_img">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<ul>
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="/public/assets/img/micam/2-sl-img1.jpg"><h4>Plug in the power cord</h4></li>
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="/public/assets/img/micam/2-sl-img2.jpg"><h4>Download Mi-Cam app</h4></li>
+                                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="/public/assets/img/micam/2-sl-img3.jpg"><h4>Click to start sound wave<br />or Wi-Fi paring </h4></li>
+                                </ul>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+
+        <section class="slide3">
+            <div class="container slide3_mobile_title" style="display: none;">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-10 col-xs-10">
+                        <h3>View Your Loved Ones When You Are Away</h3>
+                        <p>Use Mi-Cam as a home/shop monitor, a baby monitor or a pet cam to view 720P live video anywhere.  Mi-Cam app can manage multiple Mi-Cam, you can easily check everything is ok when you are not around!</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container slide3_desk_title">
+                <div class="row slide3__background">
+                    <div class="col-lg-7 col-md-7">
+                        <h3>View Your Loved Ones<br />When You Are Away</h3>
+                        <p>Use Mi-Cam as a home/shop monitor, a baby monitor or a pet cam to view 720P live video anywhere.  Mi-Cam app can manage multiple Mi-Cam, you can easily check everything is ok when you are not around!</p>
+                        <ul>
+                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="/public/assets/img/micam/3-sl-img1.png"></li>
+                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="/public/assets/img/micam/3-sl-img2.png"></li>
+                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><img src="/public/assets/img/micam/3-sl-img3.png"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide4">
+            <div class="container slide4_description textcenter">
+                <div class="row">
+                    <div class="col-lg-offset-1 col-lg-10 col-md-offset-1 col-md-10 slide4_title">
+                       <h3>View Your Loved Ones<br />days & Nights</h3>
+                    </div>
+                </div>
+
+                <div class="row slide4_content">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="slide4_img_dest">
+                            <img class="4-sl-phone" src="/public/assets/img/micam/4-sl-phone-day.jpg">
+                            <div class="slide4-left">
+                                <h4>720P High-Definition Camera</h4>
+                                <p>View clear and what’s going on clearly even under low light environments!</p>
+                            </div>
+                            <div class="slide4-right">
+                                <h4>Low Light Night Vision Camera</h4>
+                                <p>You can see what’s going on clearly even under low light environments!</p>
+                            </div>
+                            <div class="slide4-btn">
+                                <img src="/public/assets/img/micam/4-sl-btn-day.jpg">
+                                <a href="javascript:;" class="slide4-btn-day"></a>
+                                <a href="javascript:;" class="slide4-btn-night"></a>
+                            </div>
+                            
+                        </div>
+                        <div class="slide4_img_mobile" style="display:none;">
+                            <div class="slide4-top">
+                                <h4>720P High-Definition Camera</h4>
+                                <p>View clear and what’s going on clearly even under low light environments!</p>
+                            </div>
+                            <img class="4-sl-phone" src="/public/assets/img/micam/4-sl-phone-day.jpg">
+                            <div class="slide4-bottom">
+                                <h4>Low Light Night Vision Camera</h4>
+                                <p>You can see what’s going on clearly even under low light environments!</p>
+                            </div>
+                            <div class="slide4-btn">
+                                <img src="/public/assets/img/micam/4-sl-btn-day.jpg">
+                                <a href="javascript:;" class="slide4-btn-day"></a>
+                                <a href="javascript:;" class="slide4-btn-night"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr/>
+        </section>
+
+        <section class="slide5">
+            <div class="slide5__content clearfix">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-offset-6 col-md-offset-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 slide5_textPosition">
+							<h3 class="slide5-desk">Support FREE Local SD Card Video Recording, and Directly Playback via Mi-Cam App</h3>
+                            <h3 class="slide5-mobile">SUPPORT FREE LOCAL SD CARD VIDEO RECORDING AND PLAYBACK</h3>
+							<p class="slide-p-desk">Mount your SD card up to 64GB in Mi-Cam!<br />Mi-Cam automatically records rolling video into your SD card. You can playback, snapshot or record clips to your own storage. </p>
+                            <p class="slide-p-mobile">Keep your data in your hand, ensure the privacy & data security!</p>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+
+        <section class="slide6">
+            <div class="slide6_fon">
+                <div class="slide6__content clearfix">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <h3>Stay Connected with Two-Way Talk Feature</h3>
+                                <p class="slide-p-desk">Two-way high quality audio allows you to listen in and also participate in a video conversation between Mi-Cam & your Mi-Cam app. You can use your Mi-Cam to talk with family members, pets, and anyone else near Mi-Cam. From anywhere.</p>
+                                <p class="slide-p-mobile">Two-way audio allows you to listen in and also participate in a video conversation between Mi-Cam & Mi-Cam app</p>
+                                <h4>Mi-Cam app can also do :</h4>
+                                <ul class="textcenter">
+                                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img src="/public/assets/img/micam/6-sl-more1.jpg"><h6>Recording</h6></li>
+                                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img src="/public/assets/img/micam/6-sl-more2.jpg"><h6>Snapshot</h6></li>
+                                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img src="/public/assets/img/micam/6-sl-more3.jpg"><h6>Playback</h6></li>
+                                    <li class="col-lg-3 col-md-3 col-sm-3 col-xs-3"><img src="/public/assets/img/micam/6-sl-more4.jpg"><h6>Gallery</h6></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide7">
+            <div class="slide7_fon">
+                <div class="slide7__content clearfix">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-offset-4 col-md-offset-4 col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                                <h3>Share the joy with friends and family</h3>
+                                <p class="slide-p-desk">Share your Mi-Cam video with friends, family or fans via Mi-Cam app. They don’t need to have Mi-Cam, but only download & install Mi-Cam app. Life will be more fun by sharing your joy!</p>
+                                <p class="slide-p-mobile">Share your Mi-Cam video with friends, family or fans via Mi-Cam app. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slide8">
+            <div class="slide8_fon">
+                <div class="slide8__content clearfix">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                                <h3>Put Mi-Cam Anywhere</h3>
+                                <p>Adjustable 360° magnetic base can be attached to any flat surface by sticking the included metal disc to the surface and placing the base of your Mi-Cam onto it. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div style=" height:430px; margin:40px 0; background: url(public/assets/img/micam/news1.jpg) center 0 no-repeat"></div>
+      <footer class="slide9">
+
+
+    <div class="bar--small" style="text-align:center; color:#fff; font-weight:bold; font-size:22px;line-height:50px">Download</div>
+    <div class="container__download hidden-sm hidden-md hidden-lg clearfix">
+        <a href="#" class="footer__title__text container__download--link">
+            download application
+        </a>
+    </div>
+
+    <div class="container--small text-center footer__img">
+        <div class="appdown">
+        
+        
+        
+<!--            <div class="left">
+                <div class="footer__img__aps footer__img--qrcode">
+                    <img data-src="/public/assets/img/micam/footer-qrcode.png" class="lazyload" alt="" width="79" height="80">
+                </div>
+            </div>
+            <div class="left">
+                <div class="footer__title--download"><h6>Download</h6></div>
+                <div>
+                    <a href="javascript:;" target="_blank">
+                        <div class="footer__img__aps footer__img--ios">
+                            <img data-src="/public/assets/img/watch_plus/min/footer-ios-but.png" class="left lazyload" alt="" width="30" height="36">
+                            <div class="left">
+                                <p>Available on the</p>
+                                <h6>App Store</h6>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="javascript:;" target="_blank">
+                        <div class="footer__img__aps footer__img--android">
+                            <img data-src="/public/assets/img/watch_plus/min/footer-android-but.png" class="left lazyload" alt="" width="30" height="36">
+                            <div class="left">
+                                <p>Available on</p>
+                                <h6>Android Store</h6>
+                            </div>
+                        </div>
+                    </a>                    
+                </div>
+            </div>-->
+            
+            
+   
+   
+            <div class="twocode" style="margin-top:21px">
+                <img data-src="/public/assets/img/micam/footer-qrcode.png" class="lazyload" alt="" width="80" height="80">
+            </div>
+            <div class="footer__img--aps appdownstyle">
+                <a href="https://itunes.apple.com/us/app/mi-cam/id1025281127?l=zh&ls=1&mt=8" target="_blank">
+                <img data-src="/public/assets/img/main/min/footer-ios-but.png" class="left lazyload" alt="" width="30" height="36">
+                <div class="left">
+                    <p>Available on the</p>
+                    <h6>App Store</h6>
+                </div>
+                </a>
+            </div>
+            
+            <div class="footer__img--aps appdownstyle">
+                <a href="https://play.google.com/store/apps/details?id=com.sz.panamera" target="_blank">
+                <img data-src="/public/assets/img/main/min/footer-android-but.png" class="left lazyload" alt="" width="30" height="36">
+                <div class="left">
+                    <p>Get it on</p>
+                    <h6>Google Play</h6>
+                </div>
+                </a>
+            </div> 
+   
+   
+            
+             
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="container--small text-center container__contact">
+        <div class="footer__text--beforeemail">Business Cooperation: misafes@outlook.com
+</div>
+        <div class="footer__text--beforeemail">Customer Service: contact@misafes.com</div>
+       <!-- <div class="footer__title footer__title__text clearfix">contact@misafes.com</div>-->
+    </div>
+
+    <!-- <div class="container--small text-center">
+        <div class="footer__title">
+            <div class="footer__title__line footer__title__line--before"></div>
+            <div class="footer__title__text">contact@misafes.com</div>
+            <div class="footer__title__line footer__title__line--after"></div>
+        </div>
+    </div> -->
+
+    <div class="text-center">
+        <ul class="icon_block">
+            <li><a class="gplus" href="https://www.facebook.com/misafes" target="_blank"><span>Facebook</span></a></li>
+            <li><a class="twitter" href="https://twitter.com/miSafesforloves" target="_blank"><span>Twitter</span></a></li>
+            <li><a class="linkedin" href="mailto:contact@misafes.com"><span>Email</span></a></li>
+        </ul>
+    </div>
+
+    <div class="bar--big"><div class="foot-text textcenter">&copy; Copyright 2015 MiSafes <span class="show-desk">|</span><span class="show-mobile"><br /></span>  <a href="/privacy">Privacy Policy</a> |  <a href="/terms-of-use">Terms of Use</a></div></div>
+</footer>
+    </main>
+
+
+
+    <script src="./public/assets/js/min/vendor.min.js?v=4"></script>
+
+    <script src="./public/assets/js/micam.js"></script>
+
+	<script type="text/javascript" src="/public/assets/js/min/ga.js"></script>
+    <script>
+    var u = navigator.userAgent, app = navigator.appVersion;
+    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+    var links;
+    if (isiOS) {
+       links = 'https://itunes.apple.com/us/app/mi-cam/id1025281127?l=zh&ls=1&mt=8';
+    } else {
+       links = 'https://play.google.com/store/apps/details?id=com.sz.panamera';
+		//links = 'https://play.google.com/store/apps/details?id=com.qiwo.xkidswatcher';
+   }
+    $('.container__download--link').attr('href',links)
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-68661066-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
 </body>
 </html>
