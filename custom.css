@@ -8,7 +8,7 @@ a, a:active, a:focus, a:hover, body {
 }
 
 h3, h5 {
-    font-family: rounds_blackregular
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif
 }
 
 .slide4 p span, footer h3, h5 {
@@ -83,8 +83,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-family: helveticaneuecyrultralight_condensed;
-    font-size: 50px
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    /*font-size: 50px*/
+    color: #666;
 }
 
 h3 {
@@ -112,7 +113,9 @@ h6, p, ul.nav > li > a {
 }
 @media only screen and (min-width:768px) {
 	h6, p, ul.nav>li>a {
-		font-family: HELVETICALTLIGHT
+		font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+        color: #333;
+        font-weight: 300;
 	}
 }
 
